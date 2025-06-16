@@ -1,10 +1,10 @@
 
 import React from 'react';
 import { Heart, ArrowRight } from 'lucide-react';
-
+import { AFFILIATE_LINK } from "@/config";
 const Footer = () => {
   const handleCTA = () => {
-    window.open('https://wait-page.eu/a/05JMfgn3SDy1K', '_blank');
+    window.open(AFFILIATE_LINK, "_blank");
     console.log('Footer CTA clicked!');
   };
 

@@ -1,0 +1,1 @@
+export const AFFILIATE_LINK = "https://wait-page.eu/a/05JMfgn3SDy1K";

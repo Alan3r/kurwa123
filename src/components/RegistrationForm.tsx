@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Heart, ArrowRight, Star, Shield } from 'lucide-react';
-
+import { AFFILIATE_LINK } from "@/config";
 const RegistrationForm = () => {
   const handleMainCTA = () => {
     window.open('https://wait-page.eu/a/05JMfgn3SDy1K', '_blank');
