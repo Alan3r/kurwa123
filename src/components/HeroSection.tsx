@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Heart, Users, MessageCircle, ArrowRight, Star } from 'lucide-react';
 
@@ -18,8 +17,7 @@ const HeroSection = () => {
   }, []);
 
   const handleMainCTA = () => {
-    // Tu będzie link afiliacyjny do aplikacji randkowej
-    window.open('https://example-dating-app.com?ref=affiliate123', '_blank');
+    window.open('https://wait-page.eu/a/05JMfgn3SDy1K', '_blank');
     console.log('Affiliate link clicked!');
   };
 

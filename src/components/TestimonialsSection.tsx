@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Heart, Star, ArrowRight } from 'lucide-react';
 
@@ -7,7 +6,7 @@ const TestimonialsSection = () => {
     {
       name: "Ania i Paweł",
       story: "Poznaliśmy się 6 miesięcy temu i już planujemy ślub! Ta aplikacja naprawdę działa - algorytm dopasowania jest niesamowity!",
-      image1: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+      image1: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=150&h=150&fit=crop&crop=face",
       image2: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       duration: "6 miesięcy razem",
       rating: 5

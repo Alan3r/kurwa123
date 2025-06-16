@@ -35,7 +35,7 @@ const FeaturesSection = () => {
   ];
 
   const handleCTA = () => {
-    window.open('https://example-dating-app.com?ref=affiliate123', '_blank');
+    window.open('https://wait-page.eu/a/05JMfgn3SDy1K', '_blank');
     console.log('Feature CTA clicked!');
   };
 

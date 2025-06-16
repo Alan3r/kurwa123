@@ -4,7 +4,7 @@ import { Heart, ArrowRight, Star, Shield } from 'lucide-react';
 
 const RegistrationForm = () => {
   const handleMainCTA = () => {
-    window.open('https://example-dating-app.com?ref=affiliate123', '_blank');
+    window.open('https://wait-page.eu/a/05JMfgn3SDy1K', '_blank');
     console.log('Main registration CTA clicked!');
   };
 
