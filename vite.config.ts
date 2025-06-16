@@ -6,7 +6,7 @@ import fs from 'fs/promises';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/kurwa123/',
+  base: '',
   server: {
     host: "::",
     port: 8080,
