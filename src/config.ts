@@ -1,1 +1,1 @@
-export const AFFILIATE_LINK = "https://true-date.eu/a/8pRgCwM8vh1vm6";
+export const AFFILIATE_LINK = "https://redrection.pro/a/NVzGCMDj7t4ko0";
