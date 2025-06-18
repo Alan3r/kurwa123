@@ -3,7 +3,7 @@ import { Heart, ArrowRight, Star, Shield } from 'lucide-react';
 
 const RegistrationForm = () => {
   const handleMainCTA = () => {
-    window.open('https://wait-page.eu/a/05JMfgn3SDy1K', '_blank');
+    window.open('https://randkuj.xyz/link/2273/31766093', '_blank');
     console.log('Main registration CTA clicked!');
   };
 

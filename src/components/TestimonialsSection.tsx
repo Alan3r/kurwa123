@@ -30,7 +30,7 @@ const TestimonialsSection = () => {
   ];
 
   const handleCTA = () => {
-    window.open('https://wait-page.eu/a/05JMfgn3SDy1K', '_blank');
+    window.open('https://randkuj.xyz/link/2273/31766093', '_blank');
     console.log('Testimonials CTA clicked!');
   };
 
