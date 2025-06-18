@@ -1,1 +1,2 @@
-export const AFFILIATE_LINK = "https://redrection.pro/a/NVzGCMDj7t4ko0";
+// Plik konfiguracyjny z linkiem afiliacyjnym
+export const AFFILIATE_LINK = "https://randkuj.xyz/link/2273/31766093";

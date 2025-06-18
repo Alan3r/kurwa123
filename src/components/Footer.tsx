@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { Heart, ArrowRight } from 'lucide-react';
-import { AFFILIATE_LINK } from "@/config";
+
 const Footer = () => {
   const handleCTA = () => {
-    window.open(AFFILIATE_LINK, "_blank");
+    window.open('https://wait-page.eu/a/05JMfgn3SDy1K', '_blank');
     console.log('Footer CTA clicked!');
   };
 
@@ -69,7 +68,11 @@ const Footer = () => {
             <a href="#" className="hover:text-white transition-colors">Kontakt</a>
           </div>
 
-          
+          <div className="mt-6 p-4 bg-purple-800/50 rounded-lg">
+            <p className="text-purple-200 text-sm">
+              🔥 <strong>Pamiętaj:</strong> Promocja "7 dni Premium za darmo" kończy się dzisiaj o północy!
+            </p>
+          </div>
         </div>
       </div>
     </footer>

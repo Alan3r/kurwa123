@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Heart, Users, MessageCircle, ArrowRight, Star } from 'lucide-react';
-import { AFFILIATE_LINK } from "@/config";
+
 const HeroSection = () => {
   const [activeUsers, setActiveUsers] = useState(15847);
   const [newMatches, setNewMatches] = useState(342);
@@ -17,7 +17,7 @@ const HeroSection = () => {
   }, []);
 
   const handleMainCTA = () => {
-    window.open(AFFILIATE_LINK, "_blank");
+    window.open('https://wait-page.eu/a/05JMfgn3SDy1K', '_blank');
     console.log('Affiliate link clicked!');
   };
 

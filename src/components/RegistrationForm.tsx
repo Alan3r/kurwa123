@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { Heart, ArrowRight, Star, Shield } from 'lucide-react';
-import { AFFILIATE_LINK } from "@/config";
+
 const RegistrationForm = () => {
   const handleMainCTA = () => {
-    window.open(AFFILIATE_LINK, "_blank");
+    window.open('https://wait-page.eu/a/05JMfgn3SDy1K', '_blank');
     console.log('Main registration CTA clicked!');
   };
 
@@ -96,7 +95,16 @@ const RegistrationForm = () => {
           </div>
         </div>
 
-        
+        {/* Urgency banner */}
+        <div className="mt-8 p-6 bg-gradient-to-r from-red-500 to-pink-500 text-white rounded-2xl text-center">
+          <h4 className="text-xl font-bold mb-2">🚨 OSTATNIA SZANSA!</h4>
+          <p className="text-red-100">
+            Tylko dziś: <span className="font-bold">Premium za darmo przez pierwsze 7 dni!</span> 
+            Nie przegap tej okazji - oferta kończy się o północy!
+          </p>
+        </div>
+
+        {/* Social proof numbers */}
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
             <div className="text-3xl font-bold text-purple-600 mb-2">2.5M+</div>

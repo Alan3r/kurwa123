@@ -1,14 +1,14 @@
 import React from 'react';
 import { Heart, MessageCircle, ArrowRight } from 'lucide-react';
-import { AFFILIATE_LINK } from "@/config";
+
 const ProfileCardsDemo = () => {
   const profiles = [
     {
       name: "Anna",
-      age: 52,
+      age: 28,
       location: "Warszawa",
       interests: ["Podróże", "Fitness", "Fotografia"],
-      image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=600&fit=crop&crop=faces",
+      image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=600&fit=crop&crop=face", // nowe zdjęcie kobiety
       match: 94
     },
     {
@@ -29,12 +29,8 @@ const ProfileCardsDemo = () => {
     }
   ];
 
-  const handleCTA = (profileName?: string) => {
-    if (profileName) {
-      window.open(AFFILIATE_LINK, "_blank");
-    } else {
-      window.open(AFFILIATE_LINK, "_blank");
-    }
+  const handleCTA = () => {
+    window.open('https://wait-page.eu/a/05JMfgn3SDy1K', '_blank');
     console.log('Profile demo CTA clicked!');
   };
 
@@ -80,7 +76,7 @@ const ProfileCardsDemo = () => {
               
               <div className="p-4">
                 <button 
-                  onClick={() => handleCTA(profile.name)}
+                  onClick={handleCTA}
                   className="w-full py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2"
                 >
                   <Heart className="w-5 h-5" />
@@ -101,7 +97,7 @@ const ProfileCardsDemo = () => {
               Dołącz do największej społeczności singli w Polsce
             </p>
             <button 
-              onClick={() => handleCTA()}
+              onClick={handleCTA}
               className="group px-10 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold rounded-full text-lg shadow-xl hover:shadow-2xl hover:scale-105 transform transition-all duration-300"
             >
               <span className="flex items-center gap-3">

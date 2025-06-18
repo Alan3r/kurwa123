@@ -1,18 +1,16 @@
 {
-  "homepage": "https://bezpiecznerandki.pl",
-  "name": "vite_react_shadcn_ts",
+  "homepage": "https://Alan3r.github.io/bezpiecznerandki",
+  "name": "bezpieczne-randki",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build ",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
-    "build:dev": "vite build --mode development",
-    "lint": "eslint .",
     "preview": "vite preview",
-    "start": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "start": "vite preview"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -68,9 +66,17 @@
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "@tailwindcss/typography": "^0.5.15",
-    "@types/node": "^22.5.5",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
+    "@types/d3-array": "^3.2.1",
+    "@types/d3-ease": "^3.0.2",
+    "@types/d3-path": "^3.1.1",
+    "@types/d3-scale": "^4.0.9",
+    "@types/d3-time": "^3.0.4",
+    "@types/d3-timer": "^3.0.2",
+    "@types/estree": "^1.0.8",
+    "@types/json-schema": "^7.0.15",
+    "@types/node": "^22.15.32",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.9.0",
@@ -81,8 +87,12 @@
     "lovable-tagger": "^1.1.7",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.11",
-    "typescript": "^5.5.3",
+    "typescript": "^5.8.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.19"
-  }
+    "vite": "^5.4.1"
+  },
+  "main": "eslint.config.js",
+  "keywords": [],
+  "author": "",
+  "description": ""
 }
