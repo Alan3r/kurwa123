@@ -24,13 +24,14 @@ const CameraCard = ({ camera }: CameraCardProps) => {
 
   return (
     <>
-      <div className="group relative bg-gradient-to-br from-slate-800/90 to-slate-900/90 backdrop-blur-sm rounded-3xl shadow-2xl hover:shadow-rose-500/25 transition-all duration-500 transform hover:-translate-y-3 cursor-pointer overflow-hidden border border-rose-800/20">
+      <div className="group relative bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-3xl shadow-2xl hover:shadow-rose-500/25 transition-all duration-500 transform hover:-translate-y-3 cursor-pointer overflow-hidden border border-rose-800/20">
         <div className="relative">
           <img 
             src={camera.image.startsWith('/img/') ? camera.image : '/img/Agata.webp'}
             alt={`${camera.name} - transmisja na żywo`}
-            className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
+            className="w-full h-64 object-cover transition-all duration-700 filter blur-sm"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
           
           {camera.isLive && (
             <div className="absolute top-4 left-4 bg-gradient-to-r from-red-500 to-rose-600 text-white px-3 py-2 rounded-full text-sm font-bold animate-pulse shadow-xl">
@@ -38,11 +39,9 @@ const CameraCard = ({ camera }: CameraCardProps) => {
             </div>
           )}
           
-          <div className="absolute top-4 right-4 bg-black/70 backdrop-blur-sm text-white px-3 py-2 rounded-full text-sm font-medium shadow-lg">
+          <div className="absolute top-4 right-4 bg-black/70 text-white px-3 py-2 rounded-full text-sm font-medium shadow-lg">
             👥 {camera.viewers}
           </div>
-          
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
           
           <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
             <h3 className="text-xl font-bold mb-2 text-shadow-lg">

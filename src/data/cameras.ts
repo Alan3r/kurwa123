@@ -19,5 +19,12 @@ export const cameras = [
     image: "/img/Maja.lat.webp",
     viewers: 95,
     isLive: false
+  },
+  {
+    id: 4,
+    name: "Agnieszka",
+    image: "/img/Patrycja.lat.webp",
+    viewers: 142,
+    isLive: true
   }
 ];

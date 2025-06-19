@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import ProfileCard from '../components/ProfileCard';
@@ -8,6 +7,8 @@ import CameraCard from '../components/CameraCard';
 import Footer from '../components/Footer';
 import { users } from '../data/users';
 import { cameras } from '../data/cameras';
+import FakeMessengerChat from '../components/FakeMessengerChat';
+import TopRightNotification from '../components/TopRightNotification';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('profiles');
@@ -68,10 +69,26 @@ const Index = () => {
               Dyskretnie, elegancko, bez zobowiązań.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-rose-600 to-pink-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-rose-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-2xl">
+              <button
+                className="bg-gradient-to-r from-rose-600 to-pink-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-rose-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-2xl"
+                onClick={() => {
+                  setActiveSection('profiles');
+                  setTimeout(() => {
+                    document.getElementById('profiles-section')?.scrollIntoView({ behavior: 'smooth' });
+                  }, 100);
+                }}
+              >
                 🔥 Przeglądaj Profile
               </button>
-              <button className="bg-gradient-to-r from-purple-600 to-rose-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-purple-700 hover:to-rose-700 transition-all duration-300 transform hover:scale-105 shadow-2xl">
+              <button
+                className="bg-gradient-to-r from-purple-600 to-rose-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-purple-700 hover:to-rose-700 transition-all duration-300 transform hover:scale-105 shadow-2xl"
+                onClick={() => {
+                  setActiveSection('profiles');
+                  setTimeout(() => {
+                    document.getElementById('cameras-section')?.scrollIntoView({ behavior: 'smooth' });
+                  }, 200);
+                }}
+              >
                 📹 Kamerki LIVE
               </button>
             </div>
@@ -79,7 +96,7 @@ const Index = () => {
         </div>
 
         {activeSection === 'profiles' && (
-          <div className="container mx-auto px-4 pb-16">
+          <div id="profiles-section" className="container mx-auto px-4 pb-16">
             {/* Profile Section */}
             <div className="mb-20">
               <div className="text-center mb-16">
@@ -103,7 +120,7 @@ const Index = () => {
             </div>
 
             {/* Camera Section */}
-            <div className="border-t border-rose-800/30 pt-20">
+            <div className="border-t border-rose-800/30 pt-20" id="cameras-section">
               <div className="text-center mb-16">
                 <h2 className="text-5xl font-bold bg-gradient-to-r from-red-400 via-rose-400 to-pink-400 bg-clip-text text-transparent mb-4">
                   Prywatne Pokazy LIVE
@@ -149,6 +166,13 @@ const Index = () => {
       </div>
       
       <Footer />
+      <FakeMessengerChat 
+        name="Katarzyna"
+        avatar="/img/Katarzyna.webp"
+        accentFrom="from-rose-600"
+        accentTo="to-pink-600"
+      />
+      <TopRightNotification />
     </div>
   );
 };
