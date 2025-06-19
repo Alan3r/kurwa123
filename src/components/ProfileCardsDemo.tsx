@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heart, MessageCircle, ArrowRight } from 'lucide-react';
-
+import { AFFILIATE_LINK } from '../config';
 const ProfileCardsDemo = () => {
   const profiles = [
     {
@@ -30,7 +30,7 @@ const ProfileCardsDemo = () => {
   ];
 
   const handleCTA = () => {
-    window.open('https://randkuj.xyz/link/2821/31766093', '_blank');
+     window.open(AFFILIATE_LINK, '_blank');
     console.log('Profile demo CTA clicked!');
   };
 

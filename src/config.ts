@@ -1,2 +1,2 @@
 // Plik konfiguracyjny z linkiem afiliacyjnym
-export const AFFILIATE_LINK = "https://randkuj.xyz/link/2273/31766093";
+export const AFFILIATE_LINK = "https://randkuj.xyz/link/2821/31766093";

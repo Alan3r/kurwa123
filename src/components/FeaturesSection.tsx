@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, MessageCircle, Users, Shield, ArrowRight } from 'lucide-react';
+import { AFFILIATE_LINK } from '../config';
 
 const FeaturesSection = () => {
   const features = [
@@ -34,7 +35,7 @@ const FeaturesSection = () => {
   ];
 
   const handleCTA = () => {
-    window.open('https://randkuj.xyz/link/2821/31766093', '_blank');
+    window.open(AFFILIATE_LINK, '_blank');
     console.log('Feature CTA clicked!');
   };
 

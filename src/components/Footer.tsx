@@ -1,9 +1,9 @@
 import React from 'react';
 import { Heart, ArrowRight } from 'lucide-react';
-
+import { AFFILIATE_LINK } from '../config';
 const Footer = () => {
   const handleCTA = () => {
-    window.open('https://randkuj.xyz/link/2821/31766093', '_blank');
+    window.open(AFFILIATE_LINK, '_blank');
     console.log('Footer CTA clicked!');
   };
 

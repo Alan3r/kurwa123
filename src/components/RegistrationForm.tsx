@@ -1,9 +1,9 @@
 import React from 'react';
 import { Heart, ArrowRight, Star, Shield } from 'lucide-react';
-
+import { AFFILIATE_LINK } from '../config';
 const RegistrationForm = () => {
   const handleMainCTA = () => {
-    window.open('https://randkuj.xyz/link/2273/31766093', '_blank');
+   window.open(AFFILIATE_LINK, '_blank');
     console.log('Main registration CTA clicked!');
   };
 
