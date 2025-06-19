@@ -16,7 +16,22 @@
     <meta property="og:title" content="Bezpieczne Randki" />
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#a21caf" />
-    <script type="module" crossorigin src="/assets/index-DrlMo1Oc.js"></script>
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(async function(OneSignal) {
+        await OneSignal.init({
+          appId: "b00949da-36f5-4446-89d2-814912f64ea3",
+          safari_web_id: "web.onesignal.auto.115f8fcb-d4e8-44f7-85e0-0f5ff0e5093f",
+          notifyButton: {
+            enable: true,
+          },
+          serviceWorkerParam: { scope: '/' },
+          serviceWorkerPath: 'onesignal-custom-sw.js',
+        });
+      });
+    </script>
+    <script type="module" crossorigin src="/assets/index-r3QTAr_2.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-jB6oPoE3.css">
   <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
 
