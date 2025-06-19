@@ -4,28 +4,36 @@ import { AFFILIATE_LINK } from '../config';
 const ProfileCardsDemo = () => {
   const profiles = [
     {
-      name: "Anna",
+      name: "Katarzyna",
       age: 28,
       location: "Warszawa",
       interests: ["Podróże", "Fitness", "Fotografia"],
-      image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=600&fit=crop&crop=face", // nowe zdjęcie kobiety
+      image: "/img/Katarzyna.webp",
       match: 94
     },
     {
-      name: "Kasia",
+      name: "Olga",
       age: 25,
       location: "Kraków", 
       interests: ["Muzyka", "Taniec", "Książki"],
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=600&fit=crop&crop=face",
+      image: "/img/Olga.webp",
       match: 87
     },
     {
-      name: "Marta",
+      name: "Justyna",
       age: 30,
       location: "Gdańsk",
       interests: ["Kultura", "Wino", "Gotowanie"],
-      image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=600&fit=crop&crop=face",
+      image: "/img/Justyna.lat.webp",
       match: 91
+    },
+    {
+      name: "Agata",
+      age: 27,
+      location: "Poznań",
+      interests: ["Sztuka", "Teatr", "Joga"],
+      image: "/img/Agata.webp",
+      match: 89
     }
   ];
 

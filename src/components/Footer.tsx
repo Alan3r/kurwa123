@@ -1,78 +1,51 @@
-import React from 'react';
-import { Heart, ArrowRight } from 'lucide-react';
-import { AFFILIATE_LINK } from '../config';
+
 const Footer = () => {
-  const handleCTA = () => {
-    window.open(AFFILIATE_LINK, '_blank');
-    console.log('Footer CTA clicked!');
-  };
-
   return (
-    <footer className="bg-gradient-to-r from-purple-900 to-pink-900 text-white py-16">
-      <div className="container mx-auto px-6">
-        {/* Final CTA */}
-        <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold mb-4">
-            Nie czekaj dłużej na miłość!
-          </h3>
-          <p className="text-purple-200 mb-8 text-lg">
-            Każdego dnia tysiące osób znajduje swoją drugą połówkę. Dołącz do nich już teraz!
-          </p>
-          
-          <button 
-            onClick={handleCTA}
-            className="group px-10 py-4 bg-white text-purple-900 font-bold rounded-full text-lg shadow-xl hover:shadow-2xl hover:scale-105 transform transition-all duration-300"
-          >
-            <span className="flex items-center gap-3">
-              Zacznij poszukiwania TERAZ
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </span>
-          </button>
-        </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center border-t border-purple-700 pt-12 mb-12">
+    <footer className="bg-gradient-to-r from-slate-900 to-slate-800 text-rose-100 py-16 border-t border-rose-800/20">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <div className="text-2xl font-bold mb-2">2.5M+</div>
-            <div className="text-purple-300 text-sm">Aktywnych użytkowników</div>
-          </div>
-          <div>
-            <div className="text-2xl font-bold mb-2">450K+</div>
-            <div className="text-purple-300 text-sm">Udanych związków</div>
-          </div>
-          <div>
-            <div className="text-2xl font-bold mb-2">97%</div>
-            <div className="text-purple-300 text-sm">Zadowolonych użytkowników</div>
-          </div>
-          <div>
-            <div className="text-2xl font-bold mb-2">4.8⭐</div>
-            <div className="text-purple-300 text-sm">Średnia ocena</div>
-          </div>
-        </div>
-
-        {/* Bottom */}
-        <div className="border-t border-purple-700 pt-8 text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Heart className="w-5 h-5 text-pink-400" />
-            <span className="font-semibold">Znajdź Miłość</span>
-            <Heart className="w-5 h-5 text-pink-400" />
-          </div>
-          
-          <p className="text-purple-300 text-sm">
-            © 2024 Najlepsza aplikacja randkowa w Polsce. Wszystkie prawa zastrzeżone.
-          </p>
-          
-          <div className="mt-4 flex justify-center gap-6 text-sm text-purple-300">
-            <a href="#" className="hover:text-white transition-colors">Polityka prywatności</a>
-            <a href="#" className="hover:text-white transition-colors">Regulamin</a>
-            <a href="#" className="hover:text-white transition-colors">Kontakt</a>
-          </div>
-
-          <div className="mt-6 p-4 bg-purple-800/50 rounded-lg">
-            <p className="text-purple-200 text-sm">
-              🔥 <strong>Pamiętaj:</strong> Promocja "7 dni Premium za darmo" kończy się dzisiaj o północy!
+            <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-rose-300 via-pink-300 to-purple-300 bg-clip-text text-transparent">
+              🌹 LuxuryDates
+            </h3>
+            <p className="text-rose-300/80 leading-relaxed text-lg">
+              Ekskluzywny portal dla wymagających mężczyzn. Dyskretne spotkania 
+              z najpiękniejszymi kobietami. Twoje pragnienia, nasze możliwości.
             </p>
           </div>
+          
+          <div>
+            <h4 className="text-xl font-semibold mb-6 text-rose-200">Ekskluzywne Usługi</h4>
+            <ul className="space-y-3 text-rose-300/80">
+              <li><a href="#" className="hover:text-rose-200 transition-colors text-lg">💎 VIP Profile</a></li>
+              <li><a href="#" className="hover:text-rose-200 transition-colors text-lg">🔥 Prywatne Pokazy</a></li>
+              <li><a href="#" className="hover:text-rose-200 transition-colors text-lg">🌹 Dyskretność</a></li>
+              <li><a href="#" className="hover:text-rose-200 transition-colors text-lg">👑 Premium Support</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 className="text-xl font-semibold mb-6 text-rose-200">Dyskretny Kontakt</h4>
+            <div className="text-rose-300/80 space-y-3">
+              <p className="text-lg">📧 vip@luxurydates.pl</p>
+              <p className="text-lg">📞 +48 500 XXX XXX</p>
+              <div className="flex space-x-6 mt-6">
+                <a href="#" className="text-rose-300/80 hover:text-rose-200 transition-colors">
+                  <span className="text-2xl">💬</span>
+                </a>
+                <a href="#" className="text-rose-300/80 hover:text-rose-200 transition-colors">
+                  <span className="text-2xl">📱</span>
+                </a>
+                <a href="#" className="text-rose-300/80 hover:text-rose-200 transition-colors">
+                  <span className="text-2xl">🔐</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="border-t border-rose-800/20 mt-12 pt-8 text-center text-rose-400/60">
+          <p className="text-lg">&copy; 2024 LuxuryDates. Dyskretność gwarantowana. Tylko dla pełnoletnich.</p>
         </div>
       </div>
     </footer>

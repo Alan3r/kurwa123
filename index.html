@@ -1,50 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bezpieczne Randki</title>
-    <meta name="description" content="Twoje Bezpieczne Randki" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D4Z81TRFRR"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-D4Z81TRFRR');
-    </script>
-    <meta property="og:title" content="Bezpieczne Randki" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#a21caf" />
-    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-    <script>
-      window.OneSignalDeferred = window.OneSignalDeferred || [];
-      OneSignalDeferred.push(async function(OneSignal) {
-        await OneSignal.init({
-          appId: "b00949da-36f5-4446-89d2-814912f64ea3",
-          safari_web_id: "web.onesignal.auto.115f8fcb-d4e8-44f7-85e0-0f5ff0e5093f",
-          notifyButton: {
-            enable: true,
-          },
-          welcomeNotification: {
-            title: "Dziękujemy za subskrypcję!",
-            message: "Będziesz otrzymywać powiadomienia o nowych randkach.",
-            url: "https://bezpiecznerandki.pl"
-          }
-        });
-      });
-    </script>
+    <title>LovableConnect - Portal Randkowy</title>
+    <meta name="description" content="Nowoczesny portal randkowy - znajdź swoją drugą połówkę" />
+    <meta name="author" content="Lovable" />
+
+    <meta property="og:title" content="LovableConnect - Portal Randkowy" />
+    <meta property="og:description" content="Nowoczesny portal randkowy - znajdź swoją drugą połówkę" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <noscript>
-      <div style="color:red;text-align:center;margin-top:2rem;">
-        Ta strona wymaga uruchomienia przez serwer developerski (np. <code>npm run dev</code>).
-        <br/>
-        Otwieranie pliku bezpośrednio nie zadziała.
-      </div>
-    </noscript>
   </body>
 </html>

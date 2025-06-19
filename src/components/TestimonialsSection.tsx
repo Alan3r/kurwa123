@@ -6,24 +6,24 @@ const TestimonialsSection = () => {
     {
       name: "Ania i Paweł",
       story: "Poznaliśmy się 6 miesięcy temu i już planujemy ślub! Ta aplikacja naprawdę działa - algorytm dopasowania jest niesamowity!",
-      image1: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
-      image2: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      image1: "/img/Agata.webp",
+      image2: "/img/Olga.webp",
       duration: "6 miesięcy razem",
       rating: 5
     },
     {
       name: "Kasia i Michał",
       story: "Po latach samotności w końcu znalazłam swoją drugą połówkę! Pierwszy match okazał się być tym jedynym. Polecam każdemu!",
-      image1: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face",
-      image2: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      image1: "/img/Katarzyna.webp",
+      image2: "/img/Anna.webp",
       duration: "1 rok razem",
       rating: 5
     },
     {
       name: "Marta i Jakub",
       story: "Mieszkamy w różnych miastach, ale aplikacja nas połączyła. Teraz przeprowadzam się do niego! Miłość nie zna granic.",
-      image1: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&h=150&fit=crop&crop=face",
-      image2: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
+      image1: "/img/Magdalena.lat.webp",
+      image2: "/img/Justyna.lat.webp",
       duration: "8 miesięcy razem",  
       rating: 5
     }
