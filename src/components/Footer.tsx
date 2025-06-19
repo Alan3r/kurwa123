@@ -27,27 +27,18 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-semibold mb-6 text-rose-200">Dyskretny Kontakt</h4>
             <div className="text-rose-300/80 space-y-3">
-              <p className="text-lg">📧 vip@luxurydates.pl</p>
-              <p className="text-lg">📞 +48 500 XXX XXX</p>
-              <div className="flex space-x-6 mt-6">
-                <a href="#" className="text-rose-300/80 hover:text-rose-200 transition-colors">
-                  <span className="text-2xl">💬</span>
-                </a>
-                <a href="#" className="text-rose-300/80 hover:text-rose-200 transition-colors">
-                  <span className="text-2xl">📱</span>
-                </a>
-                <a href="#" className="text-rose-300/80 hover:text-rose-200 transition-colors">
-                  <span className="text-2xl">🔐</span>
-                </a>
-              </div>
+              
+              
+             
             </div>
           </div>
         </div>
         
         <div className="border-t border-rose-800/20 mt-12 pt-8 text-center text-rose-400/60">
-          <p className="text-lg">&copy; 2024 LuxuryDates. Dyskretność gwarantowana. Tylko dla pełnoletnich.</p>
+          <p className="text-lg">&copy; 2024 Bezpieczne Randki. Dyskretność gwarantowana. Tylko dla pełnoletnich.</p>
         </div>
-      </div>
+      </div>  
+
     </footer>
   );
 };
