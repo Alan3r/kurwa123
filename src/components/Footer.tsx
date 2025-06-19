@@ -3,7 +3,7 @@ import { Heart, ArrowRight } from 'lucide-react';
 
 const Footer = () => {
   const handleCTA = () => {
-    window.open('https://randkuj.xyz/link/2273/31766093', '_blank');
+    window.open('https://randkuj.xyz/link/2821/31766093', '_blank');
     console.log('Footer CTA clicked!');
   };
 

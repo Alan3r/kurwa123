@@ -30,7 +30,7 @@ const ProfileCardsDemo = () => {
   ];
 
   const handleCTA = () => {
-    window.open('https://randkuj.xyz/link/2273/31766093', '_blank');
+    window.open('https://randkuj.xyz/link/2821/31766093', '_blank');
     console.log('Profile demo CTA clicked!');
   };
 
