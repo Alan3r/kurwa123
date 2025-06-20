@@ -25,10 +25,26 @@ const FakeMessengerChat = ({ name, avatar, accentFrom = 'from-rose-600', accentT
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
-      const audio = new Audio('/audio/notification.mp3');
-      audio.play();
+      // Odtwarzaj dźwięk tylko jeśli użytkownik już kliknął gdziekolwiek na stronie
+      const playAudio = () => {
+        const audio = new Audio('/audio/notification.mp3');
+        audio.play();
+        window.removeEventListener('pointerdown', playAudio);
+      };
+      if ((window as any).__userInteracted) {
+        playAudio();
+      } else {
+        window.addEventListener('pointerdown', playAudio);
+      }
     }, 6000); // 6 sekund
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    // Flaga globalna, że użytkownik wykonał interakcję
+    const setInteracted = () => { (window as any).__userInteracted = true; };
+    window.addEventListener('pointerdown', setInteracted, { once: true });
+    return () => window.removeEventListener('pointerdown', setInteracted);
   }, []);
 
   const handleSend = (e: React.FormEvent) => {
