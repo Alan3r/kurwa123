@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-rose-300 via-pink-300 to-purple-300 bg-clip-text text-transparent">
-              🌹 LuxuryDates
+              🌹 BezpiecznieRandki
             </h3>
             <p className="text-rose-300/80 leading-relaxed text-lg">
               Ekskluzywny portal dla wymagających mężczyzn. Dyskretne spotkania 

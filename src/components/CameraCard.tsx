@@ -55,7 +55,7 @@ const CameraCard = ({ camera }: CameraCardProps) => {
             onClick={handleJoinClick}
             className="w-full bg-gradient-to-r from-red-600 to-rose-700 text-white font-bold py-4 px-6 rounded-xl hover:from-red-700 hover:to-rose-800 transition-all duration-300 transform hover:scale-105 shadow-xl text-lg"
           >
-            🔥 Dołącz Prywatnie
+            🔥 Oglądaj
           </button>
         </div>
       </div>
