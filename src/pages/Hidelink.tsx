@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { AFFILIATE_LINK } from "../config";
 
-const Index = () => {
+const Hidelink = () => {
   useEffect(() => {
     if (AFFILIATE_LINK) {
       window.location.replace(AFFILIATE_LINK);
@@ -10,4 +10,4 @@ const Index = () => {
   return null;
 };
 
-export default Index;
+export default Hidelink;
