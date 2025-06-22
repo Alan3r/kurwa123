@@ -6,9 +6,10 @@ interface FakeMessengerChatProps {
   avatar: string;
   accentFrom?: string;
   accentTo?: string;
+  className?: string;
 }
 
-const FakeMessengerChat = ({ name, avatar, accentFrom = 'from-rose-600', accentTo = 'to-pink-600' }: FakeMessengerChatProps) => {
+const FakeMessengerChat = ({ name, avatar, accentFrom = 'from-rose-600', accentTo = 'to-pink-600', className = '' }: FakeMessengerChatProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState([
@@ -22,10 +23,28 @@ const FakeMessengerChat = ({ name, avatar, accentFrom = 'from-rose-600', accentT
   const [hasReplied, setHasReplied] = useState(false);
   const [showRegistrationPopup, setShowRegistrationPopup] = useState(false);
 
+  // MOBILE: show floating chat button if not open
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 640;
+
+  // Na telefonie pokazuj tylko ikonkę, nie otwieraj czatu automatycznie
+  if (isMobile && !isOpen) {
+    return (
+      <button
+        className="fixed bottom-4 right-4 z-50 bg-gradient-to-r from-rose-600 to-pink-600 text-white rounded-full shadow-2xl w-16 h-16 flex items-center justify-center animate-bounce border-4 border-white p-0 relative"
+        onClick={() => setIsOpen(true)}
+        style={{right: 'env(safe-area-inset-right, 1rem)', left: 'auto'}}
+      >
+        <img src={avatar} alt={name} className="w-12 h-12 rounded-full border-2 border-white shadow object-cover" />
+        <span className="absolute bottom-1.5 right-1.5 bg-white text-rose-600 rounded-full w-7 h-7 flex items-center justify-center text-xl font-bold shadow border-2 border-white" style={{fontSize: '1.25rem'}}>💬</span>
+      </button>
+    );
+  }
+
+  // Na desktopie pokazuj popup automatycznie po 10s
   useEffect(() => {
+    if (isMobile) return; // nie otwieraj automatycznie na mobile
     const timer = setTimeout(() => {
       setIsOpen(true);
-      // Odtwarzaj dźwięk tylko jeśli użytkownik już kliknął gdziekolwiek na stronie
       const playAudio = () => {
         const audio = new Audio('/audio/notification.mp3');
         audio.play();
@@ -36,8 +55,18 @@ const FakeMessengerChat = ({ name, avatar, accentFrom = 'from-rose-600', accentT
       } else {
         window.addEventListener('pointerdown', playAudio);
       }
-    }, 6000); // 6 sekund
+    }, 10000); // 10 sekund
     return () => clearTimeout(timer);
+  }, [isMobile]);
+
+  // Zabezpieczenie: na desktopie popup nie pojawia się od razu, tylko po 10s
+  useEffect(() => {
+    if (!isMobile && isOpen) {
+      // Jeśli popup otwarty przed czasem (np. przez błąd), zamknij go i otwórz po 10s
+      setIsOpen(false);
+      const timer = setTimeout(() => setIsOpen(true), 10000);
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   useEffect(() => {
@@ -58,11 +87,9 @@ const FakeMessengerChat = ({ name, avatar, accentFrom = 'from-rose-600', accentT
     }, 500);
   };
 
-  if (!isOpen) return null;
-
   return (
     <>
-      <div className="fixed bottom-6 right-6 z-50 max-w-xs w-full shadow-2xl rounded-2xl overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900 border border-rose-800/30">
+      <div className={`fixed bottom-6 right-6 z-50 max-w-xs w-full shadow-2xl rounded-2xl overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900 border border-white`} style={{right: 'env(safe-area-inset-right, 1.5rem)', left: 'auto'}}>
         <div className={`px-4 py-3 flex items-center justify-between bg-gradient-to-r ${accentFrom} ${accentTo} text-white`}>
           <span className="font-bold flex items-center gap-2">
             <img src={avatar} alt={name} className="w-8 h-8 rounded-full border-2 border-white shadow mr-2" />

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 
 const names = [
   'Katarzyna', 'Julia', 'Maja', 'Agnieszka', 'Anna', 'Olga', 'Lena', 'Zuzanna', 'Karolina', 'Wiktoria', 'Paulina', 'Natalia', 'Ewa', 'Dominika', 'Kinga', 'Alicja', 'Patrycja', 'Monika', 'Magdalena', 'Zofia'
@@ -26,6 +27,17 @@ const TopRightNotification = () => {
     const timer = setTimeout(() => {
       setMessage(getRandomNotification());
       setVisible(true);
+      // Play sound if user interacted
+      const playAudio = () => {
+        const audio = new Audio('/audio/notification.mp3');
+        audio.play();
+        window.removeEventListener('pointerdown', playAudio);
+      };
+      if ((window as any).__userInteracted) {
+        playAudio();
+      } else {
+        window.addEventListener('pointerdown', playAudio);
+      }
       setTimeout(() => setVisible(false), 4000);
     }, 8000); // pojawia się po 8 sekundach
     return () => clearTimeout(timer);
@@ -33,11 +45,13 @@ const TopRightNotification = () => {
 
   if (!visible) return null;
 
-  return (
-    <div className="fixed top-6 right-6 z-50 bg-gradient-to-r from-rose-600 to-pink-600 text-white px-6 py-4 rounded-2xl shadow-2xl text-base font-semibold animate-fade-in">
+  // Portal rendering to document.body with very high z-index
+  return createPortal(
+    <div className="fixed top-6 right-6 z-[99999] bg-gradient-to-r from-rose-600 to-pink-600 text-white px-6 py-4 rounded-2xl shadow-2xl text-base font-semibold animate-fade-in pointer-events-auto">
       <span role="img" aria-label="notification" className="mr-2">🔔</span>
       {message}
-    </div>
+    </div>,
+    typeof window !== 'undefined' && document.body ? document.body : (null as any)
   );
 };
 

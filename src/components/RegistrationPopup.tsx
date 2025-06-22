@@ -1,5 +1,6 @@
 import { X } from 'lucide-react';
 import { AFFILIATE_LINK } from '../config';
+import { useRef, useEffect } from 'react';
 
 interface RegistrationPopupProps {
   isOpen: boolean;
@@ -7,6 +8,15 @@ interface RegistrationPopupProps {
 }
 
 const RegistrationPopup = ({ isOpen, onClose }: RegistrationPopupProps) => {
+  const topRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (isOpen && topRef.current) {
+      topRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      topRef.current.focus?.();
+    }
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   return (
@@ -19,7 +29,7 @@ const RegistrationPopup = ({ isOpen, onClose }: RegistrationPopupProps) => {
           <X size={24} />
         </button>
         
-        <div className="text-center">
+        <div className="text-center" ref={topRef} tabIndex={-1}>
           <div className="text-6xl mb-6">🔥</div>
           <h2 className="text-3xl font-bold bg-gradient-to-r from-rose-300 to-pink-300 bg-clip-text text-transparent mb-4">
             Dołącz do Nas!

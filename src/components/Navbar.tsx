@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -14,12 +13,12 @@ const Navbar = ({ activeSection, onSectionChange }: {
   ];
 
   return (
-    <nav className="bg-gradient-to-r from-slate-900/95 to-slate-800/95 backdrop-blur-lg shadow-2xl sticky top-0 z-50 border-b border-rose-800/20">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-6">
+    <nav className="bg-gradient-to-r from-slate-900/95 to-slate-800/95 backdrop-blur-lg shadow-2xl sticky top-0 z-[60] border-b border-rose-800/20">
+      <div className="container mx-auto px-2 sm:px-4">
+        <div className="flex justify-between items-center py-4 sm:py-6">
           <div className="flex items-center">
             <h1 className="text-3xl font-bold bg-gradient-to-r from-rose-300 via-pink-300 to-purple-300 bg-clip-text text-transparent">
-              🌹 Bezpieczne Randki
+              🌹 
             </h1>
           </div>
 
