@@ -1,9 +1,10 @@
 import React from 'react';
 import { Heart, ArrowRight, Star, Shield } from 'lucide-react';
 import { AFFILIATE_LINK } from '../config';
+
 const RegistrationForm = () => {
   const handleMainCTA = () => {
-   window.open(AFFILIATE_LINK, '_blank');
+    window.open(AFFILIATE_LINK, '_blank');
     console.log('Main registration CTA clicked!');
   };
 

@@ -1,44 +1,37 @@
 import React from 'react';
 import { Heart, MessageCircle, ArrowRight } from 'lucide-react';
 import { AFFILIATE_LINK } from '../config';
+
 const ProfileCardsDemo = () => {
   const profiles = [
     {
-      name: "Katarzyna",
+      name: "Anna",
       age: 28,
       location: "Warszawa",
       interests: ["Podróże", "Fitness", "Fotografia"],
-      image: "/img/Katarzyna.webp",
+      image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=600&fit=crop&crop=face", // nowe zdjęcie kobiety
       match: 94
     },
     {
-      name: "Olga",
+      name: "Kasia",
       age: 25,
       location: "Kraków", 
       interests: ["Muzyka", "Taniec", "Książki"],
-      image: "/img/Olga.webp",
+      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=600&fit=crop&crop=face",
       match: 87
     },
     {
-      name: "Justyna",
+      name: "Marta",
       age: 30,
       location: "Gdańsk",
       interests: ["Kultura", "Wino", "Gotowanie"],
-      image: "/img/Justyna.lat.webp",
+      image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=600&fit=crop&crop=face",
       match: 91
-    },
-    {
-      name: "Agata",
-      age: 27,
-      location: "Poznań",
-      interests: ["Sztuka", "Teatr", "Joga"],
-      image: "/img/Agata.webp",
-      match: 89
     }
   ];
 
   const handleCTA = () => {
-     window.open(AFFILIATE_LINK, '_blank');
+    window.open(AFFILIATE_LINK, '_blank');
     console.log('Profile demo CTA clicked!');
   };
 
