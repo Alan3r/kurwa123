@@ -1,5 +1,5 @@
 {
-  "homepage": "https://bezpiecznerandki.pl",
+  "homepage": "https://Alan3r.github.io/bezpiecznerandki",
   "name": "bezpieczne-randki",
   "private": true,
   "version": "1.0.0",
@@ -10,7 +10,8 @@
     "deploy": "gh-pages -d dist",
     "build": "vite build && copy dist\\index.html dist\\404.html && copy public\\CNAME dist\\CNAME",
     "preview": "vite preview",
-    "start": "vite preview"
+    "start": "vite preview",
+    "generate-users": "node scripts/generateUsersFromFolders.cjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
