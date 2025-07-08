@@ -105,7 +105,7 @@ export const users = [
   },
   {
     "id": 9,
-    "name": "Aleksandra Kwarek",
+    "name": "AleksandraKwarek",
     "age": 22,
     "image": "/img/profileig/AleksandraKwarek/E-5SH27peN0.jpg",
     "description": "Cześć! Jestem Aleksandra Kwarek i zapraszam na mój profil IG. Lubię poznawać nowych ludzi i dzielić się swoją pasją!",
