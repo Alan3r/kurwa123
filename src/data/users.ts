@@ -102,4 +102,131 @@ export const users = [
       "Przyjaciele"
     ],
     "isOnline": false
-  }]
+  },
+  {
+    "id": 9,
+    "name": "Aleksandra Kwarek",
+    "age": 22,
+    "image": "/img/profileig/AleksandraKwarek/E-5SH27peN0.jpg",
+    "description": "Cześć! Jestem Aleksandra Kwarek i zapraszam na mój profil IG. Lubię poznawać nowych ludzi i dzielić się swoją pasją!",
+    "location": "Instagram",
+    "interests": [
+      "Muzyka",
+      "Moda",
+      "Sport"
+    ],
+    "isOnline": false
+  },
+  {
+    "id": 10,
+    "name": "Amelia Tracz",
+    "age": 22,
+    "image": "/img/profileig/AmeliaTracz/dodane6.jpg",
+    "description": "Cześć! Jestem Amelia Tracz i zapraszam na mój profil IG. Lubię poznawać nowych ludzi i dzielić się swoją pasją!",
+    "location": "Instagram",
+    "interests": [
+      "Fotografia",
+      "Podróże",
+      "Muzyka"
+    ],
+    "isOnline": false
+  },
+  {
+    "id": 11,
+    "name": "Aneta Nowak",
+    "age": 22,
+    "image": "/img/profileig/AnetaNowak/2025-06-09_15-49-32_6152.png",
+    "description": "Cześć! Jestem Aneta Nowak i zapraszam na mój profil IG. Lubię poznawać nowych ludzi i dzielić się swoją pasją!",
+    "location": "Instagram",
+    "interests": [
+      "Przyjaciele",
+      "Podróże",
+      "Książki"
+    ],
+    "isOnline": false
+  },
+  {
+    "id": 12,
+    "name": "Iwona",
+    "age": 22,
+    "image": "/img/profileig/Iwona/hyirzsV9thU.jpg",
+    "description": "Cześć! Jestem Iwona i zapraszam na mój profil IG. Lubię poznawać nowych ludzi i dzielić się swoją pasją!",
+    "location": "Instagram",
+    "interests": [
+      "Podróże",
+      "Książki",
+      "Muzyka"
+    ],
+    "isOnline": false
+  },
+  {
+    "id": 13,
+    "name": "Julia nowicka",
+    "age": 22,
+    "image": "/img/profileig/Julianowicka/dodane (11).jpg",
+    "description": "Cześć! Jestem Julia nowicka i zapraszam na mój profil IG. Lubię poznawać nowych ludzi i dzielić się swoją pasją!",
+    "location": "Instagram",
+    "interests": [
+      "Podróże",
+      "Fotografia",
+      "Książki"
+    ],
+    "isOnline": false
+  },
+  {
+    "id": 14,
+    "name": "Natalia Surna",
+    "age": 22,
+    "image": "/img/profileig/NataliaSurna/Photo by Natalia Surna on June 18, 2024..jpg",
+    "description": "Cześć! Jestem Natalia Surna i zapraszam na mój profil IG. Lubię poznawać nowych ludzi i dzielić się swoją pasją!",
+    "location": "Instagram",
+    "interests": [
+      "Fotografia",
+      "Przyjaciele",
+      "Muzyka"
+    ],
+    "isOnline": false
+  },
+  {
+    "id": 15,
+    "name": "Ola Ciepiela",
+    "age": 22,
+    "image": "/img/profileig/OlaCiepiela/wrzucone.jpg",
+    "description": "Cześć! Jestem Ola Ciepiela i zapraszam na mój profil IG. Lubię poznawać nowych ludzi i dzielić się swoją pasją!",
+    "location": "Instagram",
+    "interests": [
+      "Muzyka",
+      "Sport",
+      "Moda"
+    ],
+    "isOnline": false
+  },
+  {
+    "id": 16,
+    "name": "Sara Rynkowska",
+    "age": 22,
+    "image": "/img/profileig/SaraRynkowska/puExA0Y_Md4.jpg",
+    "description": "Cześć! Jestem Sara Rynkowska i zapraszam na mój profil IG. Lubię poznawać nowych ludzi i dzielić się swoją pasją!",
+    "location": "Instagram",
+    "interests": [
+      "Moda",
+      "Podróże",
+      "Fotografia"
+    ],
+    "isOnline": false
+  },
+  {
+    "id": 17,
+    "name": "Weronika",
+    "age": 22,
+    "image": "/img/profileig/Weronika/yvxuKq8DySU9h6OPXu2VCuAu4AJqXH-Q1Z88HKs92wdO7B5cSvPRr81y_2Vly36uRY209BdSRGKb_-LCligFsXyp.jpg",
+    "description": "Cześć! Jestem Weronika i zapraszam na mój profil IG. Lubię poznawać nowych ludzi i dzielić się swoją pasją!",
+    "location": "Instagram",
+    "interests": [
+      "Książki",
+      "Podróże",
+      "Muzyka"
+    ],
+    "isOnline": false
+  }
+];

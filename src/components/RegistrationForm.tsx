@@ -1,35 +1,9 @@
 import React from 'react';
 import { Heart, ArrowRight, Star, Shield } from 'lucide-react';
 import { AFFILIATE_LINK } from '../config';
-
-/*
-  Dodaj instrukcję i przykładowe wywołania ttq.identify oraz ttq.track('CompleteRegistration') jako komentarz na górze komponentu RegistrationForm.
-
-  // add this before event code to all pages where PII data postback is expected and appropriate 
-  // Example: call this after successful registration or when user submits PII
-  // ttq.identify({
-  //   "email": "<hashed_email_address>", // string. The email of the customer if available. It must be hashed with SHA-256 on the client side.
-  //   "phone_number": "<hashed_phone_number>", // string. The phone number of the customer if available. It must be hashed with SHA-256 on the client side.
-  //   "external_id": "<hashed_external_id>" // string. Any unique identifier, such as loyalty membership IDs, user IDs, and external cookie IDs.It must be hashed with SHA-256 on the client side.
-  // });
-
-  // Example: call this after registration completion
-  // ttq.track('CompleteRegistration', {
-  //   "contents": [
-  //     {
-  //       "content_id": "<content_identifier>", // string. ID of the product. Example: "1077218".
-  //       "content_type": "<content_type>", // string. Either product or product_group.
-  //       "content_name": "<content_name>" // string. The name of the page or product. Example: "shirt".
-  //     }
-  //   ],
-  //   "value": "<content_value>", // number. Value of the order or items sold. Example: 100.
-  //   "currency": "<content_currency>" // string. The 4217 currency code. Example: "USD".
-  // });
-*/
-
 const RegistrationForm = () => {
   const handleMainCTA = () => {
-    window.open(AFFILIATE_LINK, '_blank');
+   window.open(AFFILIATE_LINK, '_blank');
     console.log('Main registration CTA clicked!');
   };
 

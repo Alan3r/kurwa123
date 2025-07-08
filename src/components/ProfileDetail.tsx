@@ -3,6 +3,8 @@ import { ArrowLeft } from 'lucide-react';
 import UserPost from './UserPost';
 import RegistrationPopup from './RegistrationPopup';
 import CameraCard from './CameraCard';
+import BlurredCarousel from './BlurredCarousel';
+import BlurredTiles from './BlurredTiles';
 import { cameras } from '../data/cameras';
 
 interface User {
@@ -147,6 +149,22 @@ const ProfileDetail = ({ user, onBack, onSendMessage }: ProfileDetailProps) => {
               </div>
             </div>
           )}
+
+          {/* Kafelki zablokowanych zdjęć */}
+          <div className="mt-16">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-rose-200 mb-2">Jej prywatne zdjęcia</h2>
+              <p className="text-rose-300">Zarejestruj się, aby zobaczyć więcej!</p>
+            </div>
+            <BlurredTiles
+              images={[
+                { src: '/img/Agata.webp' },
+                { src: '/img/Agnieszka.lat.webp' },
+                { src: '/img/Alicja.lat.webp' }
+              ]}
+              onShow={() => setShowRegistrationPopup(true)}
+            />
+          </div>
 
           {/* Sekcja kamerek */}
           <div className="border-t border-rose-800/30 pt-16">
