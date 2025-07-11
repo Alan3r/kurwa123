@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ProfileIg from "./pages/ProfileIg";
+import AffiliateRedirect from "./components/AffiliateRedirect";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/profiles/:profileId" element={<ProfileIg />} />
+          <Route path="/go" element={<AffiliateRedirect />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

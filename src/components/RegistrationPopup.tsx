@@ -1,5 +1,4 @@
 import { X } from 'lucide-react';
-import { AFFILIATE_LINK } from '../config';
 import { useRef, useEffect } from 'react';
 
 interface RegistrationPopupProps {
@@ -41,7 +40,7 @@ const RegistrationPopup = ({ isOpen, onClose }: RegistrationPopupProps) => {
           
           <div className="space-y-4">
             <a 
-              href={AFFILIATE_LINK}
+              href="/go"
               target="_blank" 
               rel="noopener noreferrer"
               className="block w-full bg-gradient-to-r from-rose-600 to-pink-600 text-white font-bold py-4 px-6 rounded-2xl hover:from-rose-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-xl text-lg"

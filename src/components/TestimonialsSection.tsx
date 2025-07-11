@@ -30,7 +30,7 @@ const TestimonialsSection = () => {
   ];
 
   const handleCTA = () => {
-     window.open(AFFILIATE_LINK, '_blank');
+     window.open('/go', '_blank'); // otwiera trasę z hidelink
     console.log('Testimonials CTA clicked!');
   };
 

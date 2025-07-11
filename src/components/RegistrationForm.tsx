@@ -3,7 +3,7 @@ import { Heart, ArrowRight, Star, Shield } from 'lucide-react';
 import { AFFILIATE_LINK } from '../config';
 const RegistrationForm = () => {
   const handleMainCTA = () => {
-   window.open(AFFILIATE_LINK, '_blank');
+   window.open('/go', '_blank'); // otwiera trasę z hidelink
     console.log('Main registration CTA clicked!');
   };
 

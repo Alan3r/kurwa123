@@ -38,8 +38,8 @@ const ProfileCardsDemo = () => {
   ];
 
   const handleCTA = () => {
-     window.open(AFFILIATE_LINK, '_blank');
-    console.log('Profile demo CTA clicked!');
+    window.open('/go', '_blank'); // otwiera trasę z hidelink
+    console.log('ProfileCardsDemo CTA clicked!');
   };
 
   return (
